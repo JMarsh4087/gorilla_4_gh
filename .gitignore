@@ -1,0 +1,40 @@
+# === Visual Studio build files ===
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.vs/
+*.csproj.user
+
+# === Compiled files ===
+*.dll
+*.pdb
+*.exe
+
+# === Rhino + Grasshopper plugin binaries ===
+*.gha
+
+# === Release folder binaries (but keep folder structure) ===
+release/*.gha
+release/*.dll
+release/*.pdb
+release/*.exe
+
+# === Logs and system files ===
+*.log
+*.DS_Store
+Thumbs.db
+
+# === Mono and NuGet ===
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# === Rider / JetBrains IDE ===
+.idea/
+
+# === Mac/Linux ===
+*.swp
+*~
