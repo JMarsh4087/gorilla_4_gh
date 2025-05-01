@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GorillaGridAttributes.cs" />
-    <Compile Include="GorillaOrderedMerge.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GorillaGridComponent.cs" />
+    <Compile Include="src/GorillaGridAttributes.cs" />
+    <Compile Include="src/GorillaOrderedMerge.cs" />
+    <Compile Include="src/Properties\AssemblyInfo.cs" />
+    <Compile Include="src/GorillaGridComponent.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
