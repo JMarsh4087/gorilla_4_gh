@@ -8,7 +8,7 @@ using Grasshopper.Kernel.Attributes;
 
 public class GorillaGridAttributes : GH_ComponentAttributes
 {
-    private const int cellSize = 16;
+    private const int cellSize = 18;
     private const int padding = 6;
     private const int headerHeight = 100;
 
@@ -40,7 +40,7 @@ public class GorillaGridAttributes : GH_ComponentAttributes
         Bounds = fullBounds;
 
         // Place outputs to the right of the actual grid bounds
-        float outputX = Bounds.Right - 20;
+        float outputX = Bounds.Right - 15;
         float outputYStart = Bounds.Top + 8;
 
         for (int i = 0; i < Owner.Params.Output.Count; i++)
