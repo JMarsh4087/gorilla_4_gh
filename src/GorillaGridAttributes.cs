@@ -5,7 +5,7 @@ using Grasshopper.GUI;
 using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Grasshopper.Kernel.Attributes;
-
+//test comment
 public class GorillaGridAttributes : GH_ComponentAttributes
 {
     private const int cellSize = 18;
