@@ -44,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,7 +56,11 @@
     <Compile Include="src\GorillaLineFlipByBoolean.cs" />
     <Compile Include="src\GorillaGridAttributes.cs" />
     <Compile Include="src\GorillaGridComponent.cs" />
+    <Compile Include="src\GorillaMemory.cs" />
     <Compile Include="src\GorillaOrderedMerge.cs" />
+    <Compile Include="src\GorillaPointSortPriorityDropdown.cs" />
+    <Compile Include="src\GorillaPointSortPriorityDropdownAttributes.cs" />
+    <Compile Include="src\GorillaWeightedXYZPointSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
