@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Grasshopper.Kernel;
-using Grasshopper.GUI.Canvas;
-using Grasshopper.GUI;
 using System.Windows.Forms;
 
 public class GorillaPointSortPriorityDropdown : GH_Component
@@ -14,7 +12,7 @@ public class GorillaPointSortPriorityDropdown : GH_Component
     public GorillaPointSortPriorityDropdown()
       : base("Gorilla Point Sort Priority", "Gorilla Point Sort Priority",
           "Right Click to Set XYZ priorities: 0=Ignore, 1=High, 2=Medium, 3=Low",
-          "Gorilla", "Util")
+          "Gorilla", "Points")
     {
     }
 
@@ -88,5 +86,9 @@ public class GorillaPointSortPriorityDropdown : GH_Component
         yPriority = reader.GetInt32("YPriority");
         zPriority = reader.GetInt32("ZPriority");
         return base.Read(reader);
+    }
+    public override void CreateAttributes()
+    {
+        m_attributes = new GorillaPointSortPriorityDropdownAttributes(this);
     }
 }
